@@ -1,0 +1,125 @@
+body{
+    overflow: hidden;
+    background-size: cover;
+    margin: 0 0 0 0;
+    background-repeat: no-repeat;
+}
+
+.light{
+    background-image: url("img/borówki2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.dark{
+    background-color: rgb(49, 49, 49);
+}
+
+.light-text{
+    color: rgb(49, 49, 49);
+}
+
+.dark-text{
+    color:rgb(194, 193, 193);
+}
+
+#main-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(194, 193, 193);
+    height: 8vh;
+    padding-right: 30vh;
+    padding-left: 30vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.4vh;
+    border: 0.3vh black solid;
+    color: rgb(49, 49, 49);
+    list-style-type: none;
+}
+
+#menu a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    padding: 12px;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17vh;
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.3vh;
+}
+
+#img-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 71vh;
+}
+
+#img-container img{
+    width: 30vw;
+    border-radius: 50px;
+}
+footer{
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 25px;
+    background: #000;
+    height: 4vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75vh;
+}
+
+.active, #menu a:hover{
+    background-color: rgb(160, 160, 160);
+    border-radius: 20px;
+}
+
+#sub-menu-1{
+    display: none;
+}
+
+#menu ul li:hover #sub-menu-1{
+    display: block;
+    position: absolute;
+    background:rgb(194, 193, 193);
+    margin-top: 1.3vh;
+    margin-left: -0.7vw;
+    height: 23.5vh;
+}
+
+
+#menu ul li:hover #sub-menu-1 ul{
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.2vh;
+}
+
+#menu ul li:hover #sub-menu-1 ul li{
+  padding: 1.5vh;
+  border-bottom: 1px dotted black;
+}
+
+#menu ul li:hover #sub-menu-1 ul li:last-child{
+    border-bottom: none;
+  }
